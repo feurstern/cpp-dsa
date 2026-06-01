@@ -1,12 +1,12 @@
 pub fn raindrops(n: u32) -> String {
     let mut result = String::new();
-    if n % 3 == 0 {
+    if n.is_multiple_of(3) {
         result.push_str("Pling");
     }
-    if n % 5 == 0 {
+    if n.is_multiple_of(5) {
         result.push_str("Plang");
     }
-    if n % 7 == 0 {
+    if n.is_multple_of(7) {
         result.push_str("Plong");
     }
     if result.is_empty() {
